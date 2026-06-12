@@ -36,6 +36,27 @@ Low PD means the software is trivial. It does not mean the business is. Those ar
 
 There is nothing to install. For a substantial fraction of the software this metric applies to, that was also true.
 
+There is, however, a skill. [`skills/pd-review`](skills/pd-review/SKILL.md) teaches your coding agent to perform PD reviews: dated score, rubric breakdown, sardonic verdict. The same file works across agents:
+
+```bash
+# Claude Code
+mkdir -p ~/.claude/skills/pd-review
+curl -fsSL https://raw.githubusercontent.com/thereisnotime/prompt-distance/main/skills/pd-review/SKILL.md \
+  -o ~/.claude/skills/pd-review/SKILL.md
+
+# Codex CLI (as a custom prompt)
+mkdir -p ~/.codex/prompts
+curl -fsSL https://raw.githubusercontent.com/thereisnotime/prompt-distance/main/skills/pd-review/SKILL.md \
+  -o ~/.codex/prompts/pd-review.md
+
+# OpenCode (as a command)
+mkdir -p ~/.config/opencode/command
+curl -fsSL https://raw.githubusercontent.com/thereisnotime/prompt-distance/main/skills/pd-review/SKILL.md \
+  -o ~/.config/opencode/command/pd-review.md
+```
+
+Then ask your agent to "PD review" anything. The agent will comply. It has no Dave to consult.
+
 ## Peer Review
 
 This paper is under continuous open review. To submit a formal review, [open a peer review issue](https://github.com/thereisnotime/prompt-distance/issues/new?template=peer-review.yml) using the structured form. Every submission receives an individual decision from the Program Committee, typically within one minute, which we consider a feature of the venue.
