@@ -23,7 +23,10 @@ sed -e '1,/^---$/d' \
 BUILD_DIR="$(mktemp -d)"
 trap 'rm -f "$TMP_MD"; rm -rf "$BUILD_DIR"' EXIT
 
+# implicit_figures off: captions are written manually so GitHub shows them too
 pandoc "$TMP_MD" \
+  -f markdown-implicit_figures \
+  --resource-path="$REPO_ROOT" \
   -s -o "$BUILD_DIR/paper.tex" \
   -M title="Prompt Distance: A Unified Metric for Software Triviality in the Post-Generative Era" \
   -M author="thereisnotime" \
@@ -50,6 +53,7 @@ perl -0pi -e '
   s/\\end(first)?head\n//g;
 ' "$BUILD_DIR/paper.tex"
 
+cp -r "$REPO_ROOT/figures" "$BUILD_DIR/"
 (cd "$BUILD_DIR" && pdflatex -interaction=nonstopmode paper.tex >/dev/null && pdflatex -interaction=nonstopmode paper.tex >/dev/null)
 cp "$BUILD_DIR/paper.pdf" "$OUT_PDF"
 

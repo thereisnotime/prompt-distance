@@ -37,6 +37,10 @@ Several properties follow immediately:
 
 **Property 1 (Monotonic decay).** $PD(x)$ is non-increasing in time, since $M$ improves while $x$ does not. A project that was PD-40 in 2021 may be PD-2 today. We refer to this as **prompt rot**, and note that it affects valuations on a considerable lag.
 
+![](figures/prompt-rot.png)
+
+*Figure 1: Prompt rot. PD of the same fictional product across frontier model releases (solid, log scale), against its reported valuation (dashed). The lines have not yet met. They will.*
+
 **Property 2 (Non-compositionality).** $PD(A + B) \leq PD(A) + PD(B)$, and frequently $PD(A + B) = 1$, because the model does not respect how hard the integration meeting was.
 
 **Property 3 (Observer independence).** Unlike the Weekend Conjecture, PD does not depend on the estimator's ego. It can be measured by anyone with an API key and the will to hurt feelings.
@@ -61,6 +65,10 @@ Reproductions requiring retries, regenerations, or pleading are denominated in *
 | **PD-10…99** | 10–99 | *Engineered* | Actual accumulated decisions, state, and edge cases. Congratulations: it is software. |
 | **PD-100+** | ≥100 | *Load-bearing* | The prompts would constitute a specification longer than the code. Compilers, kernels, payment systems, anything touching timezones. |
 | **PD-∞** | ∞ | *Prompt-incomplete* | Cannot be reproduced by prompting at any length, because the hard part is not the code (regulatory moats, network effects, a guy named Dave who knows where the bodies are buried). |
+
+![](figures/triviality-plane.png)
+
+*Figure 2: The Triviality Plane. Prompt Distance against revenue. Note that the upper-left quadrant is not empty, which is the entire point of this paper. Revenue axis unlabeled at the request of everyone plotted on it.*
 
 **Remark.** The hierarchy is not a value judgment on revenue. PD-1 products can be excellent businesses. The metric measures *defensibility against a teenager with a Claude subscription*, which is a different axis, and lately the more important one.
 
@@ -97,6 +105,10 @@ Six noes yields PD = 1. The rubric deliberately cannot output PD = 0: a PD-0 ver
 **Case B — Internal CRUD dashboard, 14 months, 3 engineers.** PD = 6, of which 4 were ε-prompts about authentication. The two real prompts were the data model and a request to make it "less ugly." Estimated historical effort: 4,200 person-hours. Estimated prompt effort: 11 minutes. The delta is termed **legacy dignity** and is not recoverable.
 
 **Case C — A reverse proxy in production for 9 years.** PD = ∞. Not because the code is complex, but because functional equivalence requires reproducing the undocumented behavior that four downstream teams secretly depend on. This illustrates the **Dave Boundary**: the point past which complexity lives in people, not artifacts, and no prompt can reach it.
+
+![](figures/dave-boundary.png)
+
+*Figure 3: The Dave Boundary. Artifacts to the left of the boundary can be reproduced by prompting. Dave cannot. Dave has not updated his documentation since 2019 and remains undefeated.*
 
 ## 7. Threats to Validity
 
