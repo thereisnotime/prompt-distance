@@ -33,7 +33,7 @@ pandoc "$TMP_MD" \
   -V fontsize=10pt \
   -V geometry:margin=0.75in \
   -V linkcolor=blue \
-  -V header-includes='\usepackage{microtype}\usepackage{titlesec}\titleformat*{\section}{\large\bfseries}\titleformat*{\subsection}{\normalsize\bfseries}'
+  -V header-includes='\usepackage{microtype}\usepackage{dblfloatfix}\usepackage{titlesec}\titleformat*{\section}{\large\bfseries}\titleformat*{\subsection}{\normalsize\bfseries}'
 
 # longtable can't run in two-column mode; convert to full-width table*.
 # pdflatex also can't take these Unicode chars raw; swap for math macros.
@@ -43,7 +43,8 @@ perl -0pi -e '
   s/≤/\\(\\le\\)/g;
   s/≥/\\(\\ge\\)/g;
   s/ε/\\(\\varepsilon\\)/g;
-  s/\\begin\{longtable\}\[\]\{(.*?)\}/\\begin{table*}[t]\n\\centering\n\\begin{tabular}{$1}/gs;
+  s/\\begin\{longtable\}\[\]/\\begin{table*}[!tb]\n\\centering\n\\begin{tabular}/g;
+  s/\\columnwidth/\\textwidth/g;
   s/\\end\{longtable\}/\\bottomrule\n\\end{tabular}\n\\end{table*}/g;
   s/\\bottomrule\\noalign\{\}\n\\endlastfoot\n//g;
   s/\\end(first)?head\n//g;
