@@ -97,6 +97,8 @@ Six noes yields PD = 1. The rubric deliberately cannot output PD = 0: a PD-0 ver
 
 **Erratum.** An earlier draft of question 1 asked about authentication instead, measuring operational complexity only; under that draft, compilers scored PD = 4. The rubric has been revised. The compilers have not.
 
+**Artifact availability.** A reference implementation of the assessor is distributed with this paper as an agent skill. The authors note, without comment, that performing a PD review is now itself PD-1.
+
 ## 6. Case Studies (Anonymized)
 
 **Case A — "AI meeting summarizer," $4M seed.** PD = 1. The reproduction's prompt was shorter than the company's About page. Notably, the original product's system prompt was later leaked and found to be *the same prompt*, establishing the first known case of **PD fixed-point**: a product equal to its own reproduction instructions.
