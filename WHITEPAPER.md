@@ -87,7 +87,7 @@ Because of Property 1 (prompt rot), all scores MUST be dated: *"PD(x) = 3 (claud
 
 The full protocol is the standard of proof, but it requires actually doing it, and most PD disputes occur in comment sections. For field conditions we provide a conservative estimator computable from the marketing page alone. Start from PD = 64 and halve for each "no":
 
-1. Does it have real authentication (not "we forward your API key")?
+1. Does correctness depend on knowledge that is not on the first page of search results (an algorithm, a spec, a domain)?
 2. Does it hold persistent state that would be painful to lose?
 3. Does it integrate with more than two external systems that can each fail independently?
 4. Does it have a compliance surface (HIPAA, PCI, GDPR, timezones)?
@@ -95,6 +95,8 @@ The full protocol is the standard of proof, but it requires actually doing it, a
 6. Is there a Dave?
 
 Six noes yields PD = 1. The rubric deliberately cannot output PD = 0: a PD-0 verdict requires the humility of checking whether rsync already does it, and nobody reaching for a rubric has that. We acknowledge that the rubric is itself an unfalsifiable confidence-based estimator — a Weekend Conjecture with arithmetic. Transcripts remain the standard of proof; the rubric is for arguing.
+
+**Erratum.** An earlier draft of question 1 asked about authentication instead, measuring operational complexity only; under that draft, compilers scored PD = 4. The rubric has been revised. The compilers have not.
 
 ## 6. Case Studies (Anonymized)
 

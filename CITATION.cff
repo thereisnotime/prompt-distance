@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use Prompt Distance to hurt feelings, please cite it properly. Undated citations are inadmissible (see section 5)."
+title: "Prompt Distance: A Unified Metric for Software Triviality in the Post-Generative Era"
+abstract: "Prompt Distance (PD) is the minimum number of prompts required to reproduce a software artifact from an empty directory using a contemporary large language model. A substantial fraction of venture-funded software exhibits PD of 1 or less."
+authors:
+  - name: thereisnotime
+version: "0.2"
+date-released: 2026-06-12
+url: "https://github.com/thereisnotime/prompt-distance"
+repository-code: "https://github.com/thereisnotime/prompt-distance"
+keywords:
+  - prompt-distance
+  - software-complexity
+  - kolmogorov-complexity
+  - triviality
+  - dave
