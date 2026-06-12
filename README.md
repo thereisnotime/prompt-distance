@@ -4,7 +4,7 @@ A whitepaper proposing **Prompt Distance**: the minimum number of prompts requir
 
 In short: a way to say "this product is one prompt away from not existing" with a citation.
 
-Read the full paper: [WHITEPAPER.md](WHITEPAPER.md)
+Read the full paper: [WHITEPAPER.md](WHITEPAPER.md), or as a two-column PDF: [paper/prompt-distance.pdf](paper/prompt-distance.pdf) (prepared for SIGBOVIK 2027; build it yourself with `tools/build-paper.sh`, requires pandoc + texlive)
 
 ## TL;DR
 
