@@ -25,19 +25,19 @@ The core insight is that generative models have collapsed the cost of *implement
 
 ## 2. Definition
 
-**Definition 1 (Prompt Distance).** Let *x* be a software artifact, *M* a contemporary frontier language model, and *P = (p₁, p₂, …, pₙ)* an ordered sequence of prompts. Then:
+**Definition 1 (Prompt Distance).** Let $x$ be a software artifact, $M$ a contemporary frontier language model, and $P = (p_1, p_2, \ldots, p_n)$ an ordered sequence of prompts. Then:
 
-> **PD(x) = min { |P| : eval(M, P) ≅ x }**
+$$PD(x) = \min \\{\, |P| : \mathrm{eval}(M, P) \cong x \,\\}$$
 
-where `eval(M, P)` denotes the artifact produced by submitting *P* sequentially to *M* in a fresh session, and `≅` denotes *functional equivalence as judged by the artifact's own marketing site*.
+where $\mathrm{eval}(M, P)$ denotes the artifact produced by submitting $P$ sequentially to $M$ in a fresh session, and $\cong$ denotes *functional equivalence as judged by the artifact's own marketing site*.
 
 **Definition 2 (Functional equivalence, ≅).** Two artifacts are functionally equivalent if a user of the original, given the reproduction, would not notice for at least one billing cycle.
 
 Several properties follow immediately:
 
-**Property 1 (Monotonic decay).** PD(x) is non-increasing in time, since *M* improves while *x* does not. A project that was PD-40 in 2021 may be PD-2 today. We refer to this as **prompt rot**, and note that it affects valuations on a considerable lag.
+**Property 1 (Monotonic decay).** $PD(x)$ is non-increasing in time, since $M$ improves while $x$ does not. A project that was PD-40 in 2021 may be PD-2 today. We refer to this as **prompt rot**, and note that it affects valuations on a considerable lag.
 
-**Property 2 (Non-compositionality).** PD(A + B) ≤ PD(A) + PD(B), and frequently PD(A + B) = 1, because the model does not respect how hard the integration meeting was.
+**Property 2 (Non-compositionality).** $PD(A + B) \leq PD(A) + PD(B)$, and frequently $PD(A + B) = 1$, because the model does not respect how hard the integration meeting was.
 
 **Property 3 (Observer independence).** Unlike the Weekend Conjecture, PD does not depend on the estimator's ego. It can be measured by anyone with an API key and the will to hurt feelings.
 
@@ -45,7 +45,7 @@ Several properties follow immediately:
 
 The SI unit of Prompt Distance is the **prompt (pt)**, defined as one user message to a frontier model in a fresh session at default settings, with no retries. Standard notation:
 
-- **PD(x) = n** — "*x* is *n* prompts away."
+- $PD(x) = n$ — "$x$ is $n$ prompts away."
 - **PD-1** (adjective) — one-shottable. *"It's a PD-1 product."*
 - **ε-prompt** — a follow-up that merely fixes what the model got wrong; ε-prompts count, which is why almost nothing is truly PD-1 and why claiming PD-1 anyway is called **rounding down to zero engineering**.
 
