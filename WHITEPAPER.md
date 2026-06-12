@@ -1,7 +1,6 @@
 # Prompt Distance: A Unified Metric for Software Triviality in the Post-Generative Era
 
-**Version 0.1 (Draft)**
-**June 2026**
+**Version 0.2 (Draft)** — **June 2026**
 
 ---
 
@@ -16,7 +15,7 @@ We introduce **Prompt Distance (PD)**, a complexity metric defined as the minimu
 For seventy years, the software industry has lacked a rigorous vocabulary for the sentiment "this isn't a real project." Practitioners have relied on informal estimators:
 
 - *"I could build this in a weekend"* (the Weekend Conjecture, unfalsifiable since no practitioner has ever had a free weekend);
-- *"This is trivially done with rsync"* (Hacker News, 2007, in response to Dropbox — a landmark result in being technically correct and economically catastrophic);
+- *"This is trivially done with rsync"* (Hacker News, 2007, in response to Dropbox [4] — a landmark result in being technically correct and economically catastrophic);
 - *"It's just a GPT wrapper"* (2023–present, an architectural observation lacking quantification).
 
 These heuristics share a fatal flaw: they measure the *speaker's confidence*, not the *artifact's complexity*. Prompt Distance resolves this by anchoring triviality to a reproducible, external oracle: the language model itself.

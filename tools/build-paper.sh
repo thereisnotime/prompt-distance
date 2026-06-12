@@ -30,7 +30,7 @@ pandoc "$TMP_MD" \
   -s -o "$BUILD_DIR/paper.tex" \
   -M title="Prompt Distance: A Unified Metric for Software Triviality in the Post-Generative Era" \
   -M author="thereisnotime" \
-  -M date="Draft v0.1 — prepared for submission to SIGBOVIK 2027" \
+  -M date="Draft v0.2 — prepared for submission to SIGBOVIK 2027" \
   -V documentclass=article \
   -V classoption=twocolumn \
   -V fontsize=10pt \
