@@ -75,9 +75,24 @@ To assign a PD score, the assessor SHALL:
 
 Because of Property 1 (prompt rot), all scores MUST be dated: *"PD(x) = 3 (claude-fable-5, 2026-06)."* An undated PD score is as meaningless as an undated currency amount.
 
+### 5.1 Field Estimation (the Rubric)
+
+The full protocol is the standard of proof, but it requires actually doing it, and most PD disputes occur in comment sections. For field conditions we provide a conservative estimator computable from the marketing page alone. Start from PD = 64 and halve for each "no":
+
+1. Does it have real authentication (not "we forward your API key")?
+2. Does it hold persistent state that would be painful to lose?
+3. Does it integrate with more than two external systems that can each fail independently?
+4. Does it have a compliance surface (HIPAA, PCI, GDPR, timezones)?
+5. Has it been in production long enough for users to depend on its bugs?
+6. Is there a Dave?
+
+Six noes yields PD = 1. The rubric deliberately cannot output PD = 0: a PD-0 verdict requires the humility of checking whether rsync already does it, and nobody reaching for a rubric has that. We acknowledge that the rubric is itself an unfalsifiable confidence-based estimator — a Weekend Conjecture with arithmetic. Transcripts remain the standard of proof; the rubric is for arguing.
+
 ## 6. Case Studies (Anonymized)
 
 **Case A — "AI meeting summarizer," $4M seed.** PD = 1. The reproduction's prompt was shorter than the company's About page. Notably, the original product's system prompt was later leaked and found to be *the same prompt*, establishing the first known case of **PD fixed-point**: a product equal to its own reproduction instructions.
+
+**Corollary 1 (No product is a fixed point twice).** Any product that includes its own PD score in its marketing has increased its PD by exactly the length of that claim. Self-description is not free; a system cannot advertise its own triviality without becoming marginally less trivial. We believe this is the closest the field will come to an incompleteness result, and we are comfortable with that.
 
 **Case B — Internal CRUD dashboard, 14 months, 3 engineers.** PD = 6, of which 4 were ε-prompts about authentication. The two real prompts were the data model and a request to make it "less ugly." Estimated historical effort: 4,200 person-hours. Estimated prompt effort: 11 minutes. The delta is termed **legacy dignity** and is not recoverable.
 
@@ -102,4 +117,4 @@ We invite the community to measure responsibly, disclose transcripts, and rememb
 
 ---
 
-*Comments, refutations, and PD scores of this whitepaper itself (current estimate: PD = 2, one for the idea and one ε-prompt for the tables) are welcome.*
+*Comments, refutations, and PD scores of this whitepaper itself (current estimate: PD = 2 — one for the whitepaper, one for the LaTeX) are welcome. By Corollary 1, publishing this estimate has made it wrong.*
