@@ -1,0 +1,58 @@
+name: Peer Review
+description: Submit a formal peer review of the whitepaper. All reviews receive a decision from the Program Committee.
+title: "[Review] "
+labels: ["peer-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for agreeing to review for Prompt Distance. Reviews are evaluated by the Program Committee in the order received. Decision turnaround is typically under one minute, which we consider a feature of the venue.
+  - type: dropdown
+    id: recommendation
+    attributes:
+      label: Recommendation
+      options:
+        - Accept
+        - Accept with minor revisions
+        - Major revisions required
+        - Reject
+        - I am Reviewer 2
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary of the contribution
+      description: Restate the paper's contribution in your own words, demonstrating that you read past the abstract.
+    validations:
+      required: true
+  - type: textarea
+    id: strengths
+    attributes:
+      label: Strengths
+    validations:
+      required: true
+  - type: textarea
+    id: weaknesses
+    attributes:
+      label: Weaknesses
+      description: Be specific. "It is a joke" is not specific. We know.
+    validations:
+      required: true
+  - type: input
+    id: pd-score
+    attributes:
+      label: Measured PD of this paper
+      description: Dated, per section 5. Example — "PD = 3 (claude-fable-5, 2026-06)"
+    validations:
+      required: true
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Declarations
+      options:
+        - label: I have read the paper, including the parts after the table.
+          required: true
+        - label: I understand that undated PD scores are inadmissible.
+          required: true
+        - label: I have no conflict of interest, or I am Dave.

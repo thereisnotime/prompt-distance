@@ -31,3 +31,9 @@ Scores decay as models improve (**prompt rot**), so they must be dated:
 When reviewing a product, estimate its PD, date it, and disclose the transcript. Undated or transcript-free claims of "I one-shotted it" are inadmissible and shall be treated as Weekend Conjectures.
 
 Low PD means the software is trivial. It does not mean the business is. Those are different papers.
+
+## Peer Review
+
+This paper is under continuous open review. To submit a formal review, [open a peer review issue](https://github.com/thereisnotime/prompt-distance/issues/new?template=peer-review.yml) using the structured form. Every submission receives an individual decision from the Program Committee, typically within one minute, which we consider a feature of the venue.
+
+The acceptance rate to date is 0%. The committee is aware and considers this evidence of rigor.
