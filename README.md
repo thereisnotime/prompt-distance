@@ -32,8 +32,24 @@ When reviewing a product, estimate its PD, date it, and disclose the transcript.
 
 Low PD means the software is trivial. It does not mean the business is. Those are different papers.
 
+## Getting Started
+
+There is nothing to install. For a substantial fraction of the software this metric applies to, that was also true.
+
 ## Peer Review
 
 This paper is under continuous open review. To submit a formal review, [open a peer review issue](https://github.com/thereisnotime/prompt-distance/issues/new?template=peer-review.yml) using the structured form. Every submission receives an individual decision from the Program Committee, typically within one minute, which we consider a feature of the venue.
 
 The acceptance rate to date is 0%. The committee is aware and considers this evidence of rigor.
+
+## Contributing
+
+Pull requests are welcome and will be processed by the Program Committee (see Peer Review). To date the committee has maintained a perfect record, which we are statutorily prohibited from describing as "acceptance."
+
+## Acknowledgments
+
+This paper was written entirely by hand, by a human, in a text editor, the way Kolmogorov intended. No language model was involved at any stage of its production. The author states this plainly and asks that you extend the claim the same scrutiny you would extend a PD score submitted without a transcript.
+
+---
+
+⭐ Star this repo. It will not increase its PD.
