@@ -120,7 +120,7 @@ Six noes yields PD = 1. The rubric deliberately cannot output PD = 0: a PD-0 ver
 
 ## 8. Related Work
 
-Kolmogorov [1] defined the complexity of an object as the length of its shortest description — but denominated in program bits, an obsolete currency. Brooks [2] established that adding manpower to a late project makes it later; we extend this with the corollary that adding prompts to a PD-1 project makes it PD-1 with a roadmap. Boehm [3] estimated software effort from source lines of code, a unit the industry has since stopped producing by hand. The Hacker News Dropbox comment [4] is the field's foundational negative result. Hyrum's Law [5] underlies rubric question 5: with enough users, every observable behavior of a system will be depended on by somebody, and no prompt reproduces an observable nobody wrote down. "Vibe coding" [6] describes the *production* of low-PD software; this work provides its *detection*. The properties of the region beyond the Dave Boundary are known to the field primarily through personal communication [7].
+Kolmogorov [1] defined the complexity of an object as the length of its shortest description — but denominated in program bits, an obsolete currency. Brooks [2] established that adding manpower to a late project makes it later; we extend this with the corollary that adding prompts to a PD-1 project makes it PD-1 with a roadmap. Boehm [3] estimated software effort from source lines of code, a unit the industry has since stopped producing by hand. The Hacker News Dropbox comment [4] is the field's foundational negative result. Hyrum's Law [5] underlies rubric question 5: with enough users, every observable behavior of a system will be depended on by somebody, and no prompt reproduces an observable nobody wrote down. The properties of the region beyond the Dave Boundary are known to the field primarily through personal communication [6].
 
 ## 9. Conclusion and Future Work
 
@@ -135,8 +135,7 @@ We invite the community to measure responsibly, disclose transcripts, and rememb
 3. Boehm, B. W. (1981). *Software Engineering Economics*. Prentice-Hall.
 4. BrandonM (2007). Comment on "My YC app: Dropbox — Throw away your USB drive." *Hacker News*. https://news.ycombinator.com/item?id=9224
 5. Wright, H. (n.d.). Hyrum's Law. https://www.hyrumslaw.com
-6. Karpathy, A. (2025). "There's a new kind of coding I call 'vibe coding' …" *X*, February 2025.
-7. Dave (2019). Personal communication. Undocumented.
+6. Dave (2019). Personal communication. Undocumented.
 
 ---
 
