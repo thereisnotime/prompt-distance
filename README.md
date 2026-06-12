@@ -14,14 +14,14 @@ Read the full paper: [WHITEPAPER.md](WHITEPAPER.md), or as a two-column PDF: [pa
 
 $$PD(x) = \min \\{ |P| : \mathrm{eval}(M, P) \cong x \\}$$
 
-| Class | Meaning |
-|-------|---------|
-| PD-0 | Already exists as a library or Unix utility. No project was needed. |
-| PD-1 | One-shottable. The project is its own README. |
-| PD-2..9 | A short conversation. Usually one real design decision. |
-| PD-10..99 | Actual software. |
-| PD-100+ | Compilers, kernels, anything touching timezones. |
-| PD-∞ | The hard part is not code. See: the Dave Boundary. |
+| Class | Meaning | Example |
+|-------|---------|---------|
+| PD-0 | Already exists as a library or Unix utility. No project was needed. | rsync with a landing page; `cron` as a service, $9/mo |
+| PD-1 | One-shottable. The project is its own README. | AI summarizer for {meetings, emails, PDFs}; ChatGPT with your logo and a waitlist |
+| PD-2..9 | A short conversation. Usually one real design decision. | CRUD dashboard with dark mode; the fourth Trello clone this quarter; "Uber for X" where X didn't ask |
+| PD-10..99 | Actual software. | your product, allegedly; the billing system everyone is afraid of |
+| PD-100+ | Compilers, kernels, anything touching timezones. | Postgres; anything that parses dates and apologizes for it |
+| PD-∞ | The hard part is not code. See: the Dave Boundary. | the reverse proxy nobody dares restart; whatever Dave maintains |
 
 Scores decay as models improve (**prompt rot**), so they must be dated:
 `PD(x) = 3 (claude-fable-5, 2026-06)`.
