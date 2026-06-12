@@ -8,7 +8,7 @@ Read the full paper: [WHITEPAPER.md](WHITEPAPER.md)
 
 ## TL;DR
 
-$$PD(x) = \min \\{\, |P| : \mathrm{eval}(M, P) \cong x \,\\}$$
+$$PD(x) = \min \\{ |P| : \mathrm{eval}(M, P) \cong x \\}$$
 
 | Class | Meaning |
 |-------|---------|

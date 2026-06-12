@@ -27,7 +27,7 @@ The core insight is that generative models have collapsed the cost of *implement
 
 **Definition 1 (Prompt Distance).** Let $x$ be a software artifact, $M$ a contemporary frontier language model, and $P = (p_1, p_2, \ldots, p_n)$ an ordered sequence of prompts. Then:
 
-$$PD(x) = \min \\{\, |P| : \mathrm{eval}(M, P) \cong x \,\\}$$
+$$PD(x) = \min \\{ |P| : \mathrm{eval}(M, P) \cong x \\}$$
 
 where $\mathrm{eval}(M, P)$ denotes the artifact produced by submitting $P$ sequentially to $M$ in a fresh session, and $\cong$ denotes *functional equivalence as judged by the artifact's own marketing site*.
 
