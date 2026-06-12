@@ -1,5 +1,7 @@
 # Prompt Distance (PD)
 
+![PD](https://img.shields.io/badge/PD-2_(claude--fable--5,_2026--06)-orange) ![Peer Review](https://img.shields.io/badge/peer_review-0%25_acceptance-red) ![License](https://img.shields.io/badge/license-CC_BY_4.0-lightgrey)
+
 A whitepaper proposing **Prompt Distance**: the minimum number of prompts required to reproduce a software artifact from an empty directory using a frontier LLM.
 
 In short: a way to say "this product is one prompt away from not existing" with a citation.
@@ -56,6 +58,16 @@ curl -fsSL https://raw.githubusercontent.com/thereisnotime/prompt-distance/main/
 ```
 
 Then ask your agent to "PD review" anything. The agent will comply. It has no Dave to consult.
+
+## Get your badge
+
+Measured your project? Wear the score. Replace the score, model, and date with your own (undated badges are inadmissible):
+
+```markdown
+![PD](https://img.shields.io/badge/PD-1_(claude--fable--5,_2026--06)-red)
+```
+
+Color scale: `red` for PD-1, `orange` for PD-2..9, `yellow` for PD-10..99, `green` for PD-100+, `lightgrey` for PD-∞ (measurement abandoned; Dave declined to comment). This repo wears PD-2: one prompt for the whitepaper, one for the LaTeX. We display this proudly, which by Corollary 1 makes it wrong.
 
 ## Peer Review
 
