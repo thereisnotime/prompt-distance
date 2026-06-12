@@ -121,13 +121,23 @@ Six noes yields PD = 1. The rubric deliberately cannot output PD = 0: a PD-0 ver
 
 ## 8. Related Work
 
-Kolmogorov (1963) defined the complexity of an object as the length of its shortest description — but denominated in program bits, an obsolete currency. Brooks (1975) established that adding manpower to a late project makes it later; we extend this with the corollary that adding prompts to a PD-1 project makes it PD-1 with a roadmap. The Hacker News Dropbox comment (2007) is the field's foundational negative result. "Vibe coding" (Karpathy, 2025) describes the *production* of low-PD software; this work provides its *detection*.
+Kolmogorov [1] defined the complexity of an object as the length of its shortest description — but denominated in program bits, an obsolete currency. Brooks [2] established that adding manpower to a late project makes it later; we extend this with the corollary that adding prompts to a PD-1 project makes it PD-1 with a roadmap. Boehm [3] estimated software effort from source lines of code, a unit the industry has since stopped producing by hand. The Hacker News Dropbox comment [4] is the field's foundational negative result. Hyrum's Law [5] underlies rubric question 5: with enough users, every observable behavior of a system will be depended on by somebody, and no prompt reproduces an observable nobody wrote down. "Vibe coding" [6] describes the *production* of low-PD software; this work provides its *detection*. The properties of the region beyond the Dave Boundary are known to the field primarily through personal communication [7].
 
 ## 9. Conclusion and Future Work
 
 Prompt Distance gives the industry what it has long deserved: a way to say "this is one prompt away from not existing" with a citation. Future work includes **PD futures** (pricing in expected prompt rot at the next model release), the **PD audit** as a due-diligence standard, and an empirical census of public SaaS, pending legal review and the author's remaining goodwill.
 
 We invite the community to measure responsibly, disclose transcripts, and remember the central lesson of the rsync incident: a low Prompt Distance means the software is trivial. It does not mean the business is. Those are different papers.
+
+## References
+
+1. Kolmogorov, A. N. (1965). Three approaches to the quantitative definition of information. *Problems of Information Transmission*, 1(1), 1–7.
+2. Brooks, F. P. (1975). *The Mythical Man-Month: Essays on Software Engineering*. Addison-Wesley.
+3. Boehm, B. W. (1981). *Software Engineering Economics*. Prentice-Hall.
+4. BrandonM (2007). Comment on "My YC app: Dropbox — Throw away your USB drive." *Hacker News*. https://news.ycombinator.com/item?id=9224
+5. Wright, H. (n.d.). Hyrum's Law. https://www.hyrumslaw.com
+6. Karpathy, A. (2025). "There's a new kind of coding I call 'vibe coding' …" *X*, February 2025.
+7. Dave (2019). Personal communication. Undocumented.
 
 ---
 
