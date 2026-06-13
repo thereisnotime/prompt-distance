@@ -130,6 +130,10 @@ Prompt Distance gives the industry what it has long deserved: a way to say "this
 
 We invite the community to measure responsibly, disclose transcripts, and remember the central lesson of the rsync incident: a low Prompt Distance means the software is trivial. It does not mean the business is. Those are different papers.
 
+## Acknowledgments
+
+The authors thank the anonymous founder of Case A, who has not been informed. We are grateful to Dave, without whom Case C and the entire region beyond the Dave Boundary would be reproducible, and who declined to be acknowledged on the grounds that it was not in the original ticket. We thank the Program Committee for its tireless rejection of every review of this paper, including the favorable ones. No funding was received; the work was motivated entirely by a single irritating product, to which we are indebted and which we will not name. This paper was written by hand, the way Kolmogorov intended.
+
 ## References
 
 1. Kolmogorov, A. N. (1965). Three approaches to the quantitative definition of information. *Problems of Information Transmission*, 1(1), 1–7.
